@@ -4,9 +4,7 @@ const {range} = require('./utils/array')
 
 async function main() {
 
-    const stubTasks = range(50).map(n => () => delay(500).then(() => {
-        return `#${n} completed`
-    }))
+    const stubTasks = range(50).map(n => () => delay(500).then(() => `#${n} completed`))
 
     return runInParallel(stubTasks, 5, res => {console.log(res)})
 }

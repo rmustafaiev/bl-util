@@ -1,0 +1,100 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "node": true,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "globals": {
+    "assert": true,
+    "Backendless": true,
+    "Bill": true,
+    "CardName": true
+  },
+  "rules": {
+    // require function declarations instead of expressions
+    "func-style": [
+      "warn",
+      "declaration",
+      {
+        "allowArrowFunctions": true
+      }
+    ],
+    // require let or const instead of var
+    "no-var": "warn",
+    "no-undef": "warn",
+    "no-unused-vars": "warn",
+    "max-len": [
+      "warn",
+      120
+    ],
+    // require or disallow use of semicolons instead of ASI
+    "semi": [
+      "warn",
+      "never"
+    ],
+    // require the use of === and !== except null comparison
+    "eqeqeq": [
+      "warn",
+      "smart"
+    ],
+    // specify whether double or single quotes should be used
+    "quotes": [
+      "warn",
+      "single",
+      "avoid-escape"
+    ],
+    // require space before/after arrow function"s arrow
+    "arrow-spacing": [
+      "warn",
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    "arrow-parens": [
+      "warn",
+      "as-needed"
+    ],
+    // suggest using of const declaration for variables that are never modified after declared
+    "prefer-const": "warn",
+    // restrict what can be thrown as an exception
+    "no-throw-literal": "warn",
+    // disallow Unused Expressions
+    "no-unused-expressions": [
+      "warn",
+      {
+        "allowShortCircuit": true
+      }
+    ],
+    // require padding inside curly braces
+    "object-curly-spacing": [
+      "warn",
+      "always"
+    ],
+    "key-spacing": [
+      "warn",
+      {
+        "align": "colon"
+      }
+    ],
+    "array-bracket-spacing": [
+      "warn",
+      "always"
+    ],
+    "comma-dangle": ["warn", "never"],
+    "require-await": "warn",
+    "space-before-function-paren": ["warn", {"anonymous": "never", "named": "never", "asyncArrow": "always"}],
+    "keyword-spacing": ["warn", { "before": true, "after": true }],
+    "block-spacing": "warn",
+    "func-call-spacing": ["warn", "never"],
+    "space-before-blocks": "warn",
+    "eol-last": ["warn", "always"]
+  }
+}

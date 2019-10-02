@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Configs
+app/config/config.js
+
+# Logs
+*.log
+*.txt
+
+# Editors and IDEs
+.idea/*
+!.idea/codeStyleSettings.xml
+*.iml
+
+# Misc
+.DS_Store
+package-lock.json
+
+#Local environment
+.envs
+.env*
+.idea
+
+etc/config.json
